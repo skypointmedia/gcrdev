@@ -71,7 +71,7 @@ class Login extends Component {
                         </Avatar>
                         <Typography component="h1" variant="h5">
                             Sign in
-            </Typography>
+                        </Typography>
                         <TextField
                             variant="outlined"
                             margin="normal"
@@ -94,7 +94,7 @@ class Login extends Component {
                         {loginError && (
                             <Typography component="p" className={classes.errorText}>
                                 Incorrect email or password.
-              </Typography>
+                            </Typography>
                         )}
                         <Button
                             type="button"
@@ -105,7 +105,7 @@ class Login extends Component {
                             onClick={this.handleSubmit}
                         >
                             Sign In
-            </Button>
+                        </Button>
                     </Paper>
                 </Container>
             );
