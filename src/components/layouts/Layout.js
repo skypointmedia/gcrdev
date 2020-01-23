@@ -112,12 +112,11 @@ export default function MiniDrawer({ children, onLogOut }) {
             className={clsx(classes.menuButton, {
               [classes.hide]: open
             })}
-            onClick={onLogOut}
           >
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
-            Mini variant drawer
+            GCR Development
           </Typography>
         </Toolbar>
       </AppBar>
@@ -139,8 +138,8 @@ export default function MiniDrawer({ children, onLogOut }) {
             {theme.direction === "rtl" ? (
               <ChevronRightIcon />
             ) : (
-              <ChevronLeftIcon />
-            )}
+                <ChevronLeftIcon />
+              )}
           </IconButton>
         </div>
         <Divider />
@@ -155,7 +154,7 @@ export default function MiniDrawer({ children, onLogOut }) {
           ))}
         </List>
         <Divider />
-        <List>
+        {/*<List>
           {["All mail", "Trash", "Spam"].map((text, index) => (
             <ListItem button key={text}>
               <ListItemIcon>
@@ -164,7 +163,7 @@ export default function MiniDrawer({ children, onLogOut }) {
               <ListItemText primary={text} />
             </ListItem>
           ))}
-        </List>
+          </List>*/}
       </Drawer>
       <main className={classes.content}>
         <div className={classes.toolbar} />

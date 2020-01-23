@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { Route, Switch } from "react-router-dom";
 import { logoutUser } from "../actions";
 import Layout from "./layouts/Layout";
+import FindingsItem from '../components/Findings'
 
 class Home extends Component {
   handleLogout = () => {
@@ -11,12 +12,13 @@ class Home extends Component {
   };
 
   render() {
-    const { isLoggingOut, logoutError } = this.props;
+
+    //    const { isLoggingOut, logoutError } = this.props;
 
     return (
       <Layout onLogOut={this.handleLogout}>
         <Switch>
-          <Route exact path="/" component={() => <div>Home</div>} />
+          <Route exact path="/" component={() => <FindingsItem></FindingsItem>} />
           <Route
             exact
             path="/dashboard"

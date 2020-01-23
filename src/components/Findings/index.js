@@ -44,8 +44,6 @@ export default function BasicTextFields() {
                     />
                 )}
             />
-
-            <TextField label="location" multiline />
             <FormControl className={classes.formControl}>
                 <InputLabel htmlFor="grouped-native-select">Status</InputLabel>
                 <Select native defaultValue="" input={<Input id="grouped-native-select" />}>
