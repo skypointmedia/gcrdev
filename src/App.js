@@ -11,6 +11,7 @@ function App(props) {
   const { isAuthenticated, isVerifying } = props;
   return (
     <Switch>
+      <Route path="/login" component={Login} />
       <ProtectedRoute
         // exact
         path="/"
@@ -18,7 +19,6 @@ function App(props) {
         isAuthenticated={isAuthenticated}
         isVerifying={isVerifying}
       />
-      <Route path="/login" component={Login} />
     </Switch>
   );
 }
