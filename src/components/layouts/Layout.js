@@ -152,10 +152,10 @@ export default function MiniDrawer({ children, onLogOut }) {
         </div>
         <Divider />
         <List>
-          {["Findings", "Machine Learning"].map((text, index) => (
+          {["Findings"].map((text, index) => (
             <ListItem button key={text}>
               <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                {index % 1 === 0 ? <InboxIcon /> : <MailIcon />}
               </ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
