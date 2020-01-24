@@ -80,6 +80,9 @@ const useStyles = makeStyles(theme => ({
   content: {
     flexGrow: 1,
     padding: theme.spacing(3)
+  },
+  title: {
+    flexGrow: 1,
   }
 }));
 
@@ -118,8 +121,8 @@ export default function MiniDrawer({ children, onLogOut }) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap>
-            GCR Development
+          <Typography variant="h6" className={classes.title}>
+            GCRDev
           </Typography>
           <Button color="inherit" onClick={onLogOut}>Logout</Button>
 
