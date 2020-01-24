@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import { Route, Switch } from "react-router-dom";
-import { logoutUser } from "../actions";
-import Layout from "./layouts/Layout";
-import FindingsItem from '../components/Findings'
+import React, { Component } from "react"
+import { connect } from "react-redux"
+import { Route, Switch } from "react-router-dom"
+import { logoutUser } from "../actions"
+import Layout from "./layouts/Layout"
+import FindingsItem from "../components/findings"
 
 class Home extends Component {
   handleLogout = () => {
@@ -14,7 +14,6 @@ class Home extends Component {
   render() {
 
     //    const { isLoggingOut, logoutError } = this.props;
-
     return (
       <Layout onLogOut={this.handleLogout}>
         <Switch>
