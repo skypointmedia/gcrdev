@@ -4,6 +4,7 @@ import { Route, Switch } from "react-router-dom"
 import { logoutUser } from "../actions"
 import Layout from "./layouts/Layout"
 import FindingsItem from "../components/findings"
+import DicomViewer from "../components/dicom-viewer"
 
 class Home extends Component {
   handleLogout = () => {
@@ -20,8 +21,8 @@ class Home extends Component {
           <Route exact path="/" component={() => <FindingsItem></FindingsItem>} />
           <Route
             exact
-            path="/dashboard"
-            component={() => <div>Dashboard</div>}
+            path="/viewer"
+            component={() => <DicomViewer></DicomViewer>}
           />
         </Switch>
       </Layout>

@@ -122,7 +122,7 @@ export default function MiniDrawer({ children, onLogOut }) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            GCRDev
+            GCR Dev
           </Typography>
           <Button color="inherit" onClick={onLogOut}>Logout</Button>
 
